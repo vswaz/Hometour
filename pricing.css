@@ -1,0 +1,204 @@
+
+/* Pricing page */
+h2 {
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+.pricing .hero-image{
+    background-image: url("images/pricing_hero.jpeg");
+    /*
+        image source: https://360hometours.ca/wp-content/uploads/360-site-assets/images/page-banner-001.jpg
+    */
+}
+.plans {
+    padding-bottom: 20px;
+}
+#offers {
+    display: block;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    padding: 30px 0;
+    margin-top: 20px;
+}
+#offers .item {
+    background-color: #fff;
+    border-radius: 4px;
+    width: 90%;
+    margin: 30px auto;
+    padding: 10px 20px;
+}
+#offers h3, #offers h4 {
+    text-align: center;
+}
+
+#offers h4 {
+    font-size: 1.3em;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px var(--color-gray);
+}
+#offers h3 {
+    font-size: 2.0em;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 20px 0; 
+}
+
+#offers h3 > span {
+    color: #848383;
+    font-weight: 500;
+    text-decoration: line-through;
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+
+#offers .standard h3, #offers .standard h4 {
+    color: #87d146;
+}
+#offers .master h3, #offers .master h4 {
+    color: #e8603a;
+}
+#offers ul {
+    padding: 10px;
+}
+#offers li {
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px 0;
+    font-size: 0.8em;
+    margin-left: 3vw;
+}
+#offers img {
+    width: 24px;
+    box-shadow: none;
+    border: none;
+    margin-right: 10px;
+}
+#offers span {
+    line-height: 24px;
+}
+
+table {
+    width: 100%;
+    font-size: .9em;
+    text-align: left;
+    border-collapse: collapse;
+}
+table caption {
+    padding: 30px 0px;
+    text-align: left;
+}
+thead {
+    background-color: var(--color-black);
+    color: #FFF;
+    position: absolute;
+    left: -999px; 
+}
+tr:nth-of-type(even) {
+    background-color: #eff8fd;
+}
+th {
+    font-weight: 500;
+}
+th, td {
+    padding: 15px 10px;
+    border: 1px solid var(--color-gray);
+}
+td {
+    display: flex;
+}
+td::before {
+    content: attr(data-label);
+    display: block;
+    width: 40%;
+    padding-right: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.plan-name {
+    font-weight: 600;    
+}
+.original-price {
+    text-decoration: line-through;
+    color: gray; 
+    display: inline-block;
+    padding-right: 5px;
+}
+.discount-price {
+    font-weight: 600;
+    color: #bb1c13;
+}
+h4, p {
+    text-align: left;
+}
+.item h4 {
+    padding: 10px 0;
+}
+.item p {
+    padding: 10px 0 30px 0;
+}
+.item img, .item video {
+    width: 100%;
+    box-shadow: 1px 2px 2px var(--color-gray);
+    border: 1px solid var(--color-gray);
+}
+
+.pricing .row {
+    display: block;
+    padding: 20px 0;
+}
+.pricing .item{
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+.detail{
+    display: grid;
+    grid-template-columns: 70% auto;
+    justify-content: space-between;
+}
+.detail > div {
+    padding: 3px 0;
+}
+.detail > div:nth-child(odd) {
+    text-align: left;
+/*    font-weight: 600;*/
+}
+.detail > div:nth-child(even) {
+    text-align: right;
+}
+
+
+/* Desktop Layout */
+@media all and (min-width: 768px){
+    
+    table {
+        font-size: 1.0em;
+    }
+    thead {
+        position: relative;
+        left: 0px; 
+    }
+    td {
+        display: table-cell;
+    }
+    td::before {
+        display: none;
+    }
+    .pricing .row {
+        display: flex;
+        justify-content: space-between;
+    }
+    .pricing .item {
+        width: 44vw;
+    }
+    #offers {
+        display: flex;
+        justify-content: center;
+    }
+    #offers .item {
+        width: 44%;
+        margin: 0 2vw;
+    }
+    
+}

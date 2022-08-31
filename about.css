@@ -1,0 +1,70 @@
+.about .hero-image {
+    background-image: url("images/about_hero.jpeg");
+    /*
+        image source: https://360hometours.ca/wp-content/uploads/360-site-assets/images/page-banner-team-360.jpg
+    */
+}
+h2 {
+    text-transform: capitalize;
+    padding: 20px 0 20px 0;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 1.8em;
+}
+.row-wrapper{
+     background-color: #ececec;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+.letter{
+    margin: 0px;
+}
+.single-img{
+    width: 50vw; 
+    padding: 20px 0;
+}
+.single-img img{
+    border-radius:50%;
+    width: 100%;
+}
+
+.content h4{
+    margin-top: 15px;
+    margin-left: 6px;
+    color: red;
+    line-height: 20px;
+}
+.content h1{
+    text-align: center;
+    line-height: 100px;
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+}
+.content p {
+    line-height: 25px;
+}
+.letter p{
+    font-size: 16px;
+}
+
+/* Desktop Layout */
+@media all and (min-width: 768px){
+    
+    .row{
+        display: flex;
+        justify-content: space-around; 
+        flex-direction: row;
+        padding: 20px 0;
+        align-items: flex-start;
+    }
+    .single-img{
+        width: 16vw; 
+    }
+}
+

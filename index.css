@@ -1,0 +1,164 @@
+.item img {
+    width: 100%;
+    box-shadow: 1px 2px 2px var(--color-gray);
+    border: 1px solid var(--color-gray);
+}
+.team .item img{
+    border-radius:50%;
+}
+
+
+/* Mobile Layout */
+.content a {
+    color: var(--color-blue);
+}
+.customer-comment {
+    text-align: center;
+    width: 80vw;
+    margin: 10px auto 30px auto;
+}
+.customer-comment h3 {
+    font-size: 1.4em;
+    font-family: Garamond, serif;
+}
+.customer-comment .customer-msg {
+    font-size: 1.0em;
+    padding: 10px 0;
+    text-align: left;
+}
+.customer-comment .customer-image {
+    width: 18vw;
+    margin: 20px auto 6px auto;
+}
+.customer-comment img {
+    width: 100%;
+    border-radius: 50%;
+}
+.customer-comment .customer-name {
+    font-size: 0.8em;
+    font-weight: 600;
+    margin: 2px 0;
+}
+.customer-comment .customer-occupation {
+    font-size: 0.8em;
+}
+
+.index .row {
+    display: block;
+    padding: 20px 0;
+}
+.index .item{
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+.index .team .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.index .team .item{
+    width: 50%;
+}
+
+#offers {
+    display: block;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    padding: 30px 0;
+    margin-top: 20px;
+}
+#offers .item {
+    background-color: #fff;
+    border-radius: 4px;
+    width: 90%;
+    margin: 30px auto;
+    padding: 10px 20px;
+}
+#offers h3, #offers h4 {
+    text-align: center;
+}
+
+#offers h4 {
+    font-size: 1.3em;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px var(--color-gray);
+}
+#offers h3 {
+    font-size: 2.0em;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 20px 0; 
+}
+
+#offers h3 > span {
+    color: #848383;
+    font-weight: 500;
+    text-decoration: line-through;
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+
+#offers .standard h3, #offers .standard h4 {
+    color: #87d146;
+}
+#offers .master h3, #offers .master h4 {
+    color: #e8603a;
+}
+#offers ul {
+    padding: 10px;
+}
+#offers li {
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px 0;
+    font-size: 0.8em;
+    margin-left: 3vw;
+}
+#offers img {
+    width: 24px;
+    box-shadow: none;
+    border: none;
+    margin-right: 10px;
+}
+#offers span {
+    line-height: 24px;
+}
+
+
+
+
+
+/* Desktop Layout */
+@media all and (min-width: 768px){
+    
+    .index .row {
+        display: flex;
+        justify-content: space-between;
+    }
+    .index .team .row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .services .item{
+        width: 29vw;
+    } 
+    .index .team .item{
+        width: 15vw;
+    }
+    .floorplan .item, .image-retouching .item, .social-marketing .item, .video-service .item {
+        width: 44vw;
+    }
+    
+    #offers {
+        display: flex;
+        justify-content: center;
+    }
+    #offers .item {
+        width: 44%;
+        margin: 0 2vw;
+    }
+    
+}

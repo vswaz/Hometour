@@ -1,0 +1,89 @@
+.booking .hero-image{
+    background-image: url("images/booking_hero.jpeg");
+    /*
+        image source: https://cdn.majorel.com/wp-content/uploads/2019/12/09131220/majorel-consulting-team-scaled-5.jpeg
+    */
+}
+fieldset {
+    border: 1px solid var(--color-gray);
+    padding: 20px 10px 10px 10px;
+    margin: 10px 0;
+}
+.submit-wrap{
+    padding: 10px;
+}
+legend {
+    color: rgb(88, 158, 248);
+    text-transform: uppercase;
+}
+fieldset > div {
+    display: block;
+}
+label {
+    display: block;
+    margin-bottom: 4px;
+    line-height: 32px;
+    text-transform: capitalize;
+}
+input {
+    border-radius: 3px;
+    border: 1px solid rgb(88, 158, 248);
+    width: 100%;
+    padding: 6px 20px;
+    margin-bottom: 12px;
+}
+.checkbox-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+.checkbox-wrap > div {
+    width: 100%;
+}
+.checkbox-wrap label {
+    display: inline;
+}
+input[type=checkbox] {
+    width: 4%;
+    padding: 0;
+    margin-right: 20px;
+    transform: scale(1.5);
+}
+textarea {
+    border-radius: 3px;
+    border: 1px solid rgb(88, 158, 248);
+    width: 100%;
+    margin-bottom: 10px;
+}
+input[type=submit] {
+    font-size: 1.2em;
+    border-radius: 4px;
+    background-color: #4064ad;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Desktop Layout */
+@media all and (min-width: 768px){
+    
+   fieldset > div, .submit-wrap {
+        display: grid;
+        grid-template-columns: 25vw auto;
+        grid-column-gap: 5vw;
+    }
+    input, textarea {
+        width: 80%;
+    }
+    .checkbox-wrap {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .checkbox-wrap > div {
+        width: 30vw;
+    }
+    input[type=checkbox] {
+        width: 10%;
+    }
+}

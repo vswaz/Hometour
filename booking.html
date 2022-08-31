@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Digital Home Tour :: Request Booking</title>
+        <meta charset="utf-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" >
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:400,700' type='text/css'>
+        <link rel="stylesheet" href="common.css" >
+        <link rel="stylesheet" href="booking.css" >
+    </head>
+    <body>
+        <div class="wrapper">             
+            <header>
+                <div class="empty"></div>
+                <div id="nav-wrap" class="fl">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="images/logo.png" ref="made by team" alt="White color logo" />
+                        </a>
+                    </div>
+                    <button class="btn-nav-open">
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+							<path fill="#fff" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314
+								c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743
+								s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314
+								c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path>
+						</svg>
+                    </button>
+                    <div class="mobile-nav-overlay">
+                        <div class="nav-overlay-header b-sdw">
+                            <div class="logo">
+                                <a href="./index.html">
+                                    <img src="images/logo_black.png" ref="made by team" alt="Black color logo" />
+                                </a>
+                            </div>
+                            <button class="btn-nav-close">
+                                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24">
+                                    <path d="M12.75,12l8.5,8.5l-0.75,0.75L12,12.75l-8.5,8.5l-0.75,-0.75L11.25,12l-8.5,-8.5l0.75,-0.75L12,11.25l8.5,-8.5l0.75,0.75z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <nav>
+                            <ul class="fl">
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./services.html">Services</a></li>
+                                <li><a href="./pricing.html">Pricing</a></li>
+                                <li><a class="active" href="./booking.html">Request Booking</a></li>
+                                <li><a href="./about.html">About</a></li>
+                            </ul>
+                        </nav>
+                        <div class="nav-overlay-bottom">
+                            <ul>
+                                <li class="tel">
+                                    <a class="mobile" href="tel:+15192319182">1-519-231-9182</a>
+                                    <span class="desktop">1-519-231-9182</span>
+                                </li>
+                                <li><a href="mailto:info@digitalhometour.com">info@digitalhometour.com</a></li>
+                            </ul>
+                            <div class="copyright">
+                                &copy; 2021 <span class="company-name">DIGITAL HOME TOUR</span> All right reserved.
+                                <p>Made by Biswash Pandey, Nimesh Pravinbhai Dhanani, Hangu Choi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="booking">
+                <div class="hero-container">
+                    <div class="hero-image">
+                    </div>
+                    <div class="overlay">
+                        <div class="highlight">
+                            <h2>Request Booking</h2>
+                            <ul>
+                                <li><i class="fas fa-file-signature"></i>Contact Information</li>
+                                <li><i class="fas fa-photo-video"></i>Select Services</li>
+                                <li><i class="fas fa-comments"></i>Tell Us More</li>
+                            </ul>
+                            <p>Our professional team will help you!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2>Request Booking</h2>
+                    <form method="post" action="./index.html">
+                        <fieldset>
+                            <legend>CONTACT INFORMATION</legend>
+                            <div>
+                                <label for="name">Full name</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required >
+                                <label for="email">Email Address</label>
+                                <input type="email" name="email" id="email" placeholder="youremail@some.com" required >
+                                <label for="contact_number">Contact Number</label>
+                                <input type="tel" name="contact_number" id="contact_number" placeholder="E.g. 123-231-1132" pattern="\d{3}-\d{3}-\d{4}" title="Please enter in the format xxx-xxx-xxxx (Only number)"  required >
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>BOOKING DATE</legend>
+                            <div>
+                                <label for="preferred_booking_date">Preferred booking date</label>
+                                <input type="date" name="preferred_booking_date" id="preferred_booking_date">
+                                <label for="preferred_booking_time">Preferred booking time</label>
+                                <input type="time" name="preferred_booking_time" id="preferred_booking_time">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>PROPERTY INFORMATION</legend>
+                            <div>
+                                <label for="address">Address</label>
+                                <input type="text" name="address" id="address" placeholder="E.g. 299 Doon Valley Dr">
+                                <label for="city">City</label>
+                                <input type="text" name="city" id="city" placeholder="E.g. Kitchener, ON">
+                                <label for="postalcode">Postal Code</label>
+                                <input type="text" name="postalcode" id="postalcode" placeholder="E.g. N2G 4M4" pattern="[a-zA-Z\d]{3}\s[a-zA-Z\d]{3}" title="Please enter in the format XXX XXX">
+                                <label for="square_footage">Square footage</label>
+                                <input type="number" name="square_footage" id="square_footage" placeholder="2,500 sqft" min="0">
+                                <label for="listing_price">Listing price</label>
+                                <input type="number" name="listing_price" id="listing_price" placeholder="$ 2,700" min="0">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>SELECT SERVICES</legend>
+                            <div>
+                                <label>Check the service you want</label>
+                                <div class="checkbox-wrap">
+                                    <div>
+                                        <input type="checkbox" id="photography" name="services" value="photography">
+                                        <label for="photography">Standard Photography</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="video" name="services" value="video">
+                                        <label for="video">Standard Video</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="dronvideo" name="services" value="dronvideo">
+                                        <label for="dronvideo">Dron Video</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="floorplan" name="services" value="floorplan">
+                                        <label for="floorplan">Floor Plan</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="imageretouching" name="services" value="imageretouching">
+                                        <label for="imageretouching">Image Retouching</label>
+                                    </div> 
+                                    <div>
+                                        <input type="checkbox" id="socialmarketing" name="services" value="socialmarketing">
+                                        <label for="socialmarketing">Social Marketing</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Tell us more</legend>
+                            <div>
+                                <label for="tellus">Tell us anything you want</label>
+                                <textarea cols="10" rows="10" id="tellus" name="tellus"></textarea>
+                                <label for="promo">Enter promo code (if available)</label>
+                                <input type="text" name="promo" id="promo" placeholder="XXX-XXXX" pattern="[a-zA-Z]{3}-[a-zA-Z]{4}" title="Enter valid promo code in the format XXX-XXXX">
+                            </div>
+                        </fieldset>
+                        <div class="submit-wrap">
+                            <label></label>
+                            <input type="submit" class="b-sdw" value="Send Booking Request" />
+                        </div>
+                    </form>
+                </div>
+            </main>
+            <div id="request-booking-btn" class="b-sdw">
+                <div class="logo-icon">
+                    <img src="images/logo_icon_white.png" ref="made by team" alt="White logo icon without company name" />
+                </div>
+                <div><a href="./booking.html">Request Booking</a></div>
+            </div>
+            <footer>
+                <div class="sitemap">
+                    <div class="intro">
+                        <div class="logo">
+                            <img src="images/logo.png" ref="made by team" alt="White color logo" />
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar ipsum at dictum porta. Maecenas pellentesque elit eget fringilla faucibus.
+                        </p>
+                    </div>              
+                    <div class="menu">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="./services.html">Photography</a></li>
+                            <li><a href="./services.html">Video</a></li>
+                            <li><a href="./services.html">Image Retouching</a></li>
+                            <li><a href="./services.html">Floor Plan</a></li>
+                            <li><a href="./services.html">Social Marketing</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <h4>Pricing &amp; Booking</h4>
+                        <ul>
+                            <li><a href="./pricing.html">Pricing</a></li>
+                            <li><a href="./booking.html">Request Booking</a></li>
+                        </ul>
+                    </div>   
+                    <div class="menu">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="./about.html">About</a></li>
+                            <li class="tel">
+                                <a class="mobile" href="tel:+15192319182">1-519-231-9182</a>
+                                <span class="desktop">1-519-231-9182</span>
+                            </li>
+                            <li><a href="mailto:info@digitalhometour.com">info@digitalhometour.com</a></li>
+                            <li class="follow">
+                                <a class="twitter" href="http://twitter.com/" target="_blank"></a>
+                                <a class="facebook" href="https://www.facebook.com/" target="_blank"></a>
+                                <a class="youtube" href="https://www.youtube.com/channel/UCPgJ6lekEutiDFIOpyhSwbw" target="_blank"></a>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+                <div class="references">
+                    <div>
+                        <p class="title">Source Code</p>
+                        <p>
+                            <a href="https://github.com/HanguChoi/rwd_final_group_project" target="_blank">
+                                https://github.com/HanguChoi/rwd_final_group_project
+                            </a>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="title">Original Website</p>
+                        <p>
+                            <a href="https://360hometours.ca" target="_blank">
+                                https://360hometours.ca
+                            </a>  
+                        </p>
+                    </div>
+                </div>
+                <div class="copyright">
+                    &copy; 2021 <span class="company-name">DIGITAL HOME TOUR</span> All right reserved.
+                    <p>Made by Biswash Pandey, Nimesh Pravinbhai Dhanani, Hangu Choi</p>
+                </div>
+            </footer>
+        </div>
+        <script src="common.js" ></script>
+    </body>
+</html>

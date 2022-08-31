@@ -1,0 +1,62 @@
+
+/* Services page */
+h4 {
+    padding: 5px 0;
+}
+
+
+.services .hero-image{
+    background-image: url("images/services_hero.jpeg");
+    /*
+        image source: https://360hometours.ca/wp-content/uploads/360-site-assets/images/page-banner-036.jpg
+    */
+}
+.services a {
+    color: var(--color-blue);
+}
+.item img, .item video {
+    width: 100%;
+    box-shadow: 1px 2px 2px var(--color-gray);
+}
+
+
+/* Mobile Layout */
+
+.services .row {
+    display: block;
+    padding: 20px 0;
+}
+.services .item{
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+.floorplan img {
+    border: 1px solid var(--color-gray);
+}
+.social-marketing .item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+}
+.social-marketing .item > div {
+    flex: 1 1 0px;
+}
+
+
+/* Desktop Layout */
+@media all and (min-width: 768px){
+    
+    .services .row {
+        display: flex;
+        justify-content: space-between;
+    }
+    .photography .item{
+        width: 29vw;
+    }
+    .floorplan .item, .image-retouching .item, .social-marketing .item, .video-service .item {
+        width: 44vw;
+    }
+    
+}
